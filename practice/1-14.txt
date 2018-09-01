@@ -1,0 +1,2 @@
+space: Θ(n)
+time: Θ(n^5)

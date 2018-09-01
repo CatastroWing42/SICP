@@ -1,0 +1,3 @@
+no she cant
+(fast-expt) will cost O(log(n)) times, which is identical to the old (expmod)
+but in order to eval the remainder is another story

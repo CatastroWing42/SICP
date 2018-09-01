@@ -1,0 +1,3 @@
+i noticed that my miller-rabin program is not fully uncheated,
+
+there is a probability 1105 escape from this test

@@ -1,0 +1,11 @@
+this newly defined (new-if) do not act like (if)
+
+e.g. (if predicate then-clause else-clause)
+predicate will be evalued, then then-clause or else-clause will be evalued.
+so it offers a way to break out;
+
+but. (new-if predicate then-clause else-clause)
+all three data will be evalued, for the explainer will evalue things before explain (new-if)
+so the recursion will never break out.
+
+well. you can replace (if) with (cond), it will work properly, but you just can not pack it in (new-if)

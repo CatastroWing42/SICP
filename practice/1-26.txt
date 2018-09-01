@@ -1,0 +1,1 @@
+his program needs to eval every (expmod) twice, so it will cause a O(log(n)) time to O(n) time
