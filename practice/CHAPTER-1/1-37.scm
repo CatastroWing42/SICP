@@ -1,0 +1,21 @@
+(define (cont-frac n d k)
+	(define (iter i result)
+		(let ((ni (n i))
+			  (di (d i)))
+			 (if (= i 0)
+				 result
+				 (iter (- i 1) (/ ni (+ di result))))))
+	(iter k 0))
+	
+(cont-frac (lambda (i) 1.0)
+		   (lambda (i) 1.0)
+		   11)
+		   
+(define (cont-frac-recur n d k)
+	(define (recur i)
+		(let ((ni (n i))
+			  (di (d i)))
+			 (if (= i k)
+				 (/ ni di)
+				 (/ ni (+ di (recur (+ i 1)))))))
+	(recur 1))
